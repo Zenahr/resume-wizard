@@ -87,6 +87,7 @@ class Frame(wx.Frame):
         dlg.ShowModal()
         dlg.Destroy()  
 
+
 app = wx.App(redirect=True)   # Error messages go to popup window
 top = Frame("<<project>>")
 top.Show()
