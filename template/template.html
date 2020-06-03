@@ -11,88 +11,30 @@
 
     <style>
         body {
-            font-family: 'Source Code Pro', monospace;
-            color: #444444;
-            margin: 40px auto;
-            max-width: 650px;
-            padding: 0 10px;
-            background-color: #222222;
+            background-color: #3b3b3b;
             color: white;
-        }
-        
-        li {
-            list-style-type: none;
-        }
-        
-        .Dino {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 35%;
-        }
-        
-        a {
-            color: #00eb5a;
-        }
-        
-        .email {
-            text-align: center;
-        }
-        
-        .typewriter-text {
-            display: inline-block;
-            overflow: hidden;
-            animation: typing 4s steps(30, end), blink .75s step-end infinite;
-            white-space: nowrap;
-            font-size: 30px;
-            font-weight: 700;
-            border-right: 4px solid orange;
-            box-sizing: border-box;
-        }
-        
-        .social {
-            text-align: center;
-        }
-        
-        @keyframes typing {
-            from {
-                width: 0%
-            }
-            to {
-                width: 100%
-            }
-        }
-        
-        @keyframes blink {
-            from,
-            to {
-                border-color: transparent
-            }
-            50% {
-                border-color: #00eb5a;
-            }
         }
     </style>
 
 </head>
 <main>
-    <div class="typewriter">
-        <div class="typewriter-text"> {{ greetingText }} </div>
-    </div>
+    <div>{{ greetingText }}</div>
 </main>
 
 <body>
     <div>
+        <h3>{{firstName}}</h3>
+        <h4>{{lastName}}</h4>
         <p>{{ resumeText }}</p>
 
     </div>
     <p>{{ socialIntroText }}</p>
-    <div class="social" style="font-size: 1.5em;">
+    <div>
         <a href="{{ github }}" target="_blank"><i class="fab fa-github"></i></a>
         <a href="{{ linkedIn }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
-    <div class="email">
-        <p> {{ email }} </p>
+    <div>
+        <p>{{ email }}</p>
     </div>
     <p>{{ closingStatement }}</p>
     <script src="{{ js }}"></script>

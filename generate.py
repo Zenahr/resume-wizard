@@ -19,6 +19,7 @@ with open('public/index.html', 'w') as output_file:
             github=config['socials']['github'],
             linkedIn=config['socials']['linkedIn'],
             email=config['socials']['email'],
+            socialIntroText=config['content']['socialIntroText'],
             closingStatement=config['content']['closingStatement'],
             js=""
         )

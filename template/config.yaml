@@ -1,9 +1,9 @@
 content:
         title: Resume | Zenahr
-        greetingText: Whatup Alysha
-        resumeText: Hope ur not mad
-        firstName: Zenahr
-        lastName: Barzani
+        greetingText: Greeting Text
+        resumeText: This is where your resume text goes
+        firstName: Your First Name
+        lastName: Your Last Name
         socialIntroText: Here are some places on the internet you can reach me and find some of my work
         closingStatement:  See ya.
 socials:
