@@ -1,28 +1,108 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> {{ title }} </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <link rel="icon" type="image/x-icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/237/t-rex_1f996.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b3638711c.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Source Code Pro', monospace;
+            color: #444444;
+            margin: 40px auto;
+            max-width: 560px;
+            padding: 0 10px
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .Dino {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 35%;
+        }
+        
+        a {
+            color: green;
+        }
+        
+        .email {
+            text-align: center;
+        }
+        
+        .typewriter-text {
+            display: inline-block;
+            overflow: hidden;
+            animation: typing 5s steps(30, end), blink .75s step-end infinite;
+            white-space: nowrap;
+            font-size: 30px;
+            font-weight: 700;
+            border-right: 4px solid orange;
+            box-sizing: border-box;
+        }
+        
+        .social {
+            text-align: center;
+        }
+        
+        @keyframes pulse {
+            0% {
+                background-color: #001F3F;
+            }
+            100% {
+                background-color: #FF4136;
+            }
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0%
+            }
+            to {
+                width: 100%
+            }
+        }
+        
+        @keyframes blink {
+            from,
+            to {
+                border-color: transparent
+            }
+            50% {
+                border-color: green;
+            }
+        }
+    </style>
+
 </head>
+<main>
+    <div class="typewriter">
+        <div class="typewriter-text"> {{ greetingText }} </div>
+    </div>
+</main>
 
 <body>
+    <div>
+        <p>{{ resumeText }}</p>
 
-    <div class="container">
-        <h1>{{ firstName }}</h1>
-        <p>{{ lastName }}</p>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <p>{{ socialIntroText }}</p>
+    <div class="social" style="font-size: 1.5em;">
+        <a href="{{ github }}" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="{{ linkedIn }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="email">
+        <p> {{ email }} </p>
+    </div>
+    <p>{{ closingStatement }}</p>
+    <script src="{{ js }}"></script>
 </body>
 
 </html>

@@ -1,4 +1,17 @@
 content:
-        title: Page Title
+        title: Resume | Zenahr
+        greetingText: Please, don't look at the projects. They're lame.
+        resumeText: An Electrical Engineering and Computer Science student at the Unversity of Ottawa\nI live in Ottawa, Canada and outside of class I'm currently exploring web development & UI/UX design.\nCheck out some of my recent work
         firstName: Zenahr
         lastName: Barzani
+        socialIntroText: Here are some places on the internet you can reach me and find some of my work
+        closingStatement:  See ya.
+socials:
+        github: https://www.github.com/Zenahr
+        linkedIn: https://www.linkedin.com/in/zenahr-barzani
+        email: dev@zenahr.com
+styling:
+        mainCssPath: ../src/css/main.css
+        extendedCssPath: ../src/css/extended.css
+
+js: 
